@@ -66,6 +66,8 @@ function App() {
             <Route path="profile" element={<AdminProfile />} />
             <Route path="user_management" element={<UserManagement />} />
           </Route>
+
+          <Route path="*" element={<Navigate to="/" replace />} /> 
         </Routes>
         <Footer />
         <ToastContainer />
