@@ -7,13 +7,13 @@ const handleLogout = async (req, res) => {
     }
     const foundUser = await User.findOne({ refreshToken })
     if (!foundUser) {
-        res.clearCookie('refreshToken', { httpOnly: true });
+        res.clearCookie('refreshToken', { httpOnly: true, secure: true, sameSite: 'none' });
         return res.status(200).json({ message: "Logout succes" })
     }
     foundUser.refreshToken = ''
     await foundUser.save()
 
-    res.clearCookie('refreshToken', { httponly: true });
+    res.clearCookie('refreshToken', { httpOnly: true, secure: true, sameSite: 'none' });
 
     return res.status(200).json({ message: "Logout succes" })
 
