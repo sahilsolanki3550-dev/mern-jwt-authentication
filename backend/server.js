@@ -21,7 +21,8 @@ dbConnect();
 const corsOptions = {
   origin: [
     'http://localhost:5173', 
-    'https://zmkd6mtk-5173.inc1.devtunnels.ms'
+    'https://zmkd6mtk-5173.inc1.devtunnels.ms',
+    'https://mern-jwt-authentication-lrep.vercel.app'
   ], 
   methods: 'GET,POST,PUT,DELETE',  
   credentials: true                

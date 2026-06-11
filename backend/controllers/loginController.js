@@ -40,7 +40,7 @@ const userLogin = async (req, res) => {
         const response =  await user.save();
         
         
-        res.cookie('refreshToken', refreshToken, { httpOnly: true })
+        res.cookie('refreshToken', refreshToken, { httpOnly: true,  secure: true, sameSite: 'none', maxAge: 24 * 60 * 60 * 1000 })
         res.status(201).json({
             success: true,
             message: "Login Successfull",

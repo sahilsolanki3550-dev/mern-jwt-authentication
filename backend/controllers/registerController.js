@@ -44,7 +44,7 @@ const registerUser = async (req, res) => {
             return res.status(401).send("Registration failed")
         }
         
-        res.cookie('refreshToken', refreshToken, { httpOnly: true, maxAge: 24 * 60 * 60 * 1000  })
+        res.cookie('refreshToken', refreshToken, { httpOnly: true, secure: true, sameSite: 'none', maxAge: 24 * 60 * 60 * 1000 })
         res.status(201).json({
             success: true,
             message: "Registration successfull",
