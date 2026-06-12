@@ -1,87 +1,45 @@
-<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
   <defs>
-    <linearGradient id="shieldGradient" x1="100" y1="100" x2="412" y2="412">
-      <stop offset="0%" stop-color="#9EFFA5"/>
-      <stop offset="100%" stop-color="#28E6C5"/>
-    </linearGradient>
-
-    <linearGradient id="textGradient" x1="180" y1="250" x2="340" y2="250">
-      <stop offset="0%" stop-color="#8AFF66"/>
-      <stop offset="100%" stop-color="#28E6C5"/>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#22C55E"/>
     </linearGradient>
   </defs>
 
   <!-- Background -->
-  <circle cx="256" cy="256" r="250" fill="#041126"/>
+  <rect width="128" height="128" rx="28" fill="#F8FAFC"/>
 
-  <!-- Orbit Ring -->
-  <ellipse
-    cx="256"
-    cy="256"
-    rx="220"
-    ry="90"
-    stroke="url(#shieldGradient)"
-    stroke-width="8"
+  <!-- Token Ring -->
+  <circle
+    cx="64"
+    cy="52"
+    r="34"
     fill="none"
-    transform="rotate(-15 256 256)"
+    stroke="url(#bg)"
+    stroke-width="8"
+    stroke-dasharray="8 4"
   />
 
-  <!-- Shield -->
+  <!-- Lock Shackle -->
   <path
-    d="M256 80
-       L390 130
-       V250
-       C390 350 330 420 256 460
-       C182 420 122 350 122 250
-       V130
-       L256 80Z"
-    fill="#081A2F"
-    stroke="url(#shieldGradient)"
-    stroke-width="10"
+    d="M54 50V44C54 38 58 34 64 34C70 34 74 38 74 44V50"
+    fill="none"
+    stroke="#0F172A"
+    stroke-width="4"
+    stroke-linecap="round"
   />
 
-  <!-- Lock -->
-  <g transform="translate(0,-10)">
-    <rect x="206" y="180" width="100" height="90" rx="18" fill="white"/>
+  <!-- Lock Body -->
+  <rect
+    x="50"
+    y="50"
+    width="28"
+    height="20"
+    rx="4"
+    fill="url(#bg)"
+  />
 
-    <path
-      d="M226 180
-         V150
-         C226 115 286 115 286 150
-         V180"
-      stroke="white"
-      stroke-width="16"
-      fill="none"
-      stroke-linecap="round"
-    />
-
-    <circle cx="256" cy="220" r="10" fill="#081A2F"/>
-    <rect x="252" y="220" width="8" height="22" fill="#081A2F"/>
-  </g>
-
-  <!-- JWT Text -->
-  <text
-    x="256"
-    y="340"
-    text-anchor="middle"
-    font-family="Arial, sans-serif"
-    font-size="72"
-    font-weight="700"
-    fill="url(#textGradient)"
-  >
-    JWT
-  </text>
-
-  <!-- AUTH Text -->
-  <text
-    x="256"
-    y="395"
-    text-anchor="middle"
-    font-family="Arial, sans-serif"
-    font-size="38"
-    letter-spacing="6"
-    fill="#FFFFFF"
-  >
-    AUTH
-  </text>
+  <!-- Lock Keyhole -->
+  <circle cx="64" cy="59" r="2.5" fill="#FFFFFF"/>
+  <rect x="63" y="61" width="2" height="5" fill="#FFFFFF"/>
 </svg>
