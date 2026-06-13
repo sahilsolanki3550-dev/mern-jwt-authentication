@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom'
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 const Footer = () => {
   return (
-  <section className='container mx-auto bg-slate-100 py-15 flex flex-col md:flex-row space-y-5 justify-between md:items-center px-5 md:px-10'>
+  <section className=' bg-slate-100 '>
+    <div className='container mx-auto py-15 flex flex-col md:flex-row space-y-5 justify-between md:items-center px-5 md:px-10'>
     <div>
         <h3 className='text-primary font-bold text-2xl'>AuthFlow</h3>
         <p className='text-sm text-gray-600'>© 2026 AuthFlow. All rights reserved.</p>
@@ -57,6 +58,7 @@ const Footer = () => {
         <FaLinkedin size={18} />
     </a>
 
+</div>
 </div>
   </section>
   )

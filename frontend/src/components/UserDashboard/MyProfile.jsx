@@ -126,7 +126,7 @@ const MyProfile = () => {
         <div className=' md:px-60'>
             <div className='bg-white p-3 md:p-10 rounded-2xl space-y-8 md:space-y-15'>
                 <h1 className='font-bold text-2xl p-2'>My Profile</h1>
-                <div className='grid grid-cols-2 gap-2 md:gap-8'>
+                <div className='grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-8'>
                     <div className='space-y-1'>
                         <p>First Name</p>
                         {isEdit ? (

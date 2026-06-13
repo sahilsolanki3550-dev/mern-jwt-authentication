@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const CtaSection = () => {
   return (
-    <section className='font-inter container mx-auto mb-10 px-5 md:px-10 bg-neutral'>
+    <section className='font-inter container mx-auto mb-10 px-5 md:px-10 '>
         <div className='bg-black rounded-3xl space-y-8 flex flex-col py-15 px-5 items-center justify-center'>
 
         <h3 className='text-3xl text-white font-semibold'> Build Secure Applications with JWT Authentication </h3>

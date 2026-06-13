@@ -19,7 +19,7 @@ import ContactPageContainer from './pages/ContactPageContainer'
 
 function App() {
   const { isLoggedIn, user ,loading } = useAuth();
-  console.log("role", user?.role)
+  // console.log("role", user?.role)
 
 
   if (loading) {

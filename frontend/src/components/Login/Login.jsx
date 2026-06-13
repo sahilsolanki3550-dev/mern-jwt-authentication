@@ -98,7 +98,8 @@ const Login = () => {
     }
 
     return (
-        <div className='container mx-auto pt-20 py-10 bg-slate-100 flex justify-center'>
+        <div className='bg-slate-100 '>
+        <div className='container mx-auto pt-20 py-10 flex justify-center'>
             <div className='bg-white rounded-2xl  p-6 space-y-5 min-w-90'>
                 <div className='text-center space-y-2 flex flex-col items-center'>
                     <h1 className='text-2xl font-semibold'>Welcome back</h1>
@@ -135,6 +136,7 @@ const Login = () => {
     </div>
   </div>
 )}
+</div>
         </div>
     )
 }

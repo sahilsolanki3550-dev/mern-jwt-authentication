@@ -49,9 +49,9 @@ app.use('/admin', admin)
 
 mongoose.connection.once('open',()=>{ 
     console.log("Databse connection success")
-    // app.listen(port, ()=>{
-    //     console.log(`Server is running on port ${port}`)
-    // })
+    app.listen(port, ()=>{
+        console.log(`Server is running on port ${port}`)
+    })
 })
 
 module.exports = app;

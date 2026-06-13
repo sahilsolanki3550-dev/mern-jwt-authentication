@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
     return (
-        <section className='container mx-auto px-5 md:px-10 grid grid-cols-1 md:grid-cols-2 items-center py-10 gap-10 bg-neutral'>
-
+        <section className=' bg-neutral'>
+            <div className='container mx-auto px-5 md:px-10 grid grid-cols-1 md:grid-cols-2 items-center py-10 gap-10'>
             <div className='space-y-5 flex flex-col text-center items-center md:text-start md:items-start '>
                 <div className='flex max-w-55 items-center justify-between uppercase py-2 px-4 text-primary text-xs font-bold bg-slate-200 rounded-full border border-slate-300 '>
                     <svg
@@ -67,6 +67,7 @@ const HeroSection = () => {
                     </div>
 
                 </div>
+            </div>
             </div>
         </section>
     )

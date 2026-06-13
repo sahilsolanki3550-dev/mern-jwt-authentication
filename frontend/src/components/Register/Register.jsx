@@ -102,7 +102,8 @@ const Register = () => {
   }
 
   return (
-    <div className='container mx-auto pt-20 py-10 bg-slate-100 flex justify-center '>
+    <div className='bg-slate-100'>
+    <div className='container mx-auto pt-20 py-10  flex justify-center '>
       <div className='bg-white rounded-2xl  p-6 space-y-5 md:min-w-100'>
         <div className='text-center space-y-2 flex flex-col items-center'>
           <h1 className='text-2xl font-semibold'>Create an account</h1>
@@ -157,7 +158,7 @@ const Register = () => {
   </div>
 )}
     </div>
-    
+    </div>
     
   )
 }

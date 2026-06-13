@@ -19,7 +19,8 @@ const NavBar = () => {
   };
   return (
     <>
-      <header className='flex justify-between items-center py-3 px-5 font-inter shadow-xs container mx-auto bg-slate-100 sticky top-0 z-20'>
+      <header className=' bg-slate-100 sticky top-0 z-20'>
+        <div className='flex justify-between items-center py-3 px-5 font-inter shadow-xs container mx-auto'>
         <div className='text-[26px] text-primary font-bold'>AuthFlow</div>
         <nav className=' gap-8 hidden md:flex '>
           <NavLink to='/' className='hover:text-primary border-b-2 border-slate-100 hover:border-b-2 hover:border-primary transition-all duration-300'>Home</NavLink>
@@ -47,7 +48,7 @@ const NavBar = () => {
 
         </div>
 
-
+          </div>
       </header>
 
       <nav className='  flex gap-4 justify-center md:hidden p-3 bg-slate-100'>
