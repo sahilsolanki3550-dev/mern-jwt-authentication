@@ -356,7 +356,7 @@ const UserManagement = () => {
                                                                         onClick={() => setDeleteUserId(null)}
                                                                     >
                                                                         <div
-                                                                            className="bg-white rounded-xl p-6 w-full max-w-md"
+                                                                            className="bg-white rounded-xl mx-5 p-6 w-full max-w-md"
                                                                             onClick={(e) => e.stopPropagation()}
                                                                         >
                                                                             <h2 className="text-lg font-bold text-[#0A183A] mb-2">
@@ -424,7 +424,7 @@ const UserManagement = () => {
                 <div
                     className="fixed inset-0 bg-black/50 flex items-center justify-center z-50" >
                     <div
-                        className="bg-white rounded-xl p-6 w-full max-w-md"
+                        className="bg-white rounded-xl p-6 w-full max-w-md mx-5"
                         onClick={(e) => e.stopPropagation()}
                     >
 

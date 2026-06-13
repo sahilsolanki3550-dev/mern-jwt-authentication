@@ -64,7 +64,7 @@ const NavBar = () => {
           onClick={() => setShowLogoutPopup(false)}
         >
           <div
-            className="bg-white rounded-xl p-6 w-full max-w-md"
+            className="bg-white rounded-xl mx-5 p-6 w-full max-w-md"
             onClick={(e) => e.stopPropagation()}
           >
             <h2 className="text-lg font-bold text-[#0A183A] mb-2">

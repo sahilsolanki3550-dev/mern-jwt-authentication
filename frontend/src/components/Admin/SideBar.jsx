@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 
 const SideBar = () => {
   return (
-    <div className='p-5 space-y-5 sticky top-16 flex flex-row md:flex-col'>
+    <div className='p-2 lg:p-5 space-y-5 sticky top-16 flex flex-row md:flex-col'>
 
       <NavLink
         to="/admin/dashboard"

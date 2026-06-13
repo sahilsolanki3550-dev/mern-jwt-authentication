@@ -12,7 +12,7 @@ const UserDashboard = () => {
                 <p className='text-slate-500 text-lg'>Manage your account information and security settings.</p>
             </div>
 
-            <div className='grid grid-cols-2 gap-6 justify-center items-center md:px-60'>
+            <div className='grid grid-cols-2 gap-6 justify-center items-center lg:px-20 xl:px-60'>
                 <div className='bg-gray-300 p-5 rounded-2xl'>
                     <h3 className='text-slate-800 text-sm font-semibold'>ACCOUNT STATUS</h3>
                     <p className='font-bold'>Active</p>

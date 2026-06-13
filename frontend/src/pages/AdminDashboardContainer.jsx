@@ -6,12 +6,12 @@ import { NavLink, Outlet } from 'react-router-dom'
 const AdminDashboardContainer = () => {
   return (
     <div className='grid md:grid-cols-6 font-inter'>
-      <div className='col-span-1 min-h-screen hidden md:block '>
+      <div className='md:col-span-1 min-h-screen hidden md:block '>
 
         <SideBar />
       </div>
 
-      <div className='flex gap-2 md:hidden'>
+      <div className='flex justify-center gap-2 md:hidden'>
         <NavLink
           to="/admin/dashboard"
           className={({ isActive }) =>
@@ -48,8 +48,9 @@ const AdminDashboardContainer = () => {
           User Management
         </NavLink>
       </div>
+      
 
-      <div className='col-span-5 bg-neutral min-w-0'>
+      <div className='md:col-span-5 bg-neutral min-w-0'>
 
         <Outlet />
       </div>
